@@ -22,37 +22,65 @@
   <body>
     <!-- header -->
     <header>
-      <nav class="navbar navbar-expand-lg custom--nav--top">
-        <a class="navbar-brand" href="/">
-          <img src="./logo.svg" class="easy-logo" alt="" />
-        </a>
-        <span class="toggler-icon-res">
-          <img src="./images/icon-hamburger.svg" class="toggle--img" alt="" />
-        </span>
-
-        <div class="collapse navbar-collapse nav-center">
-          <ul class="navbar-nav custom--nav">
-            <li class="nav-item mr-4 active text--nav">
-              <a class="nav-link nav--text" href="/">Home </a>
-            </li>
-            <li class="nav-item mr-4 text--nav">
-              <a class="nav-link nav--text" href="/">About</a>
-            </li>
-            <li class="nav-item mr-4 text--nav">
-              <a class="nav-link nav--text" href="/">Contact</a>
-            </li>
-            <li class="nav-item mr-4 text--nav">
-              <a class="nav-link nav--text" href="/">Blog</a>
-            </li>
-            <li class="nav-item mr-4 text--nav">
-              <a class="nav-link nav--text" href="/">Careers</a>
-            </li>
-          </ul>
-          <div class="form-inline nav-item custom--side">
-            <a href="#" class="request--button">Request Invite</a>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom--nav--top">
+          <a class="navbar-brand" href="/">
+            <img src="./logo.svg" class="easy-logo" alt="" />
+          </a>
+          <div class="dropdown res-drop-show">
+            <div id="res--show">
+              <div id="img--toggle">
+                <span> &nbsp;</span>
+              </div>
+            </div>
+            <div
+              class="dropdown-menu custom--drop-res"
+              aria-labelledby="dropupMenuButton"
+            >
+              <ul class="navbar-nav custom--nav">
+                <li class="nav-item mr-4 active text--nav">
+                  <a class="nav-link nav--text" href="/">Home </a>
+                </li>
+                <li class="nav-item mr-4 text--nav">
+                  <a class="nav-link nav--text" href="/">About</a>
+                </li>
+                <li class="nav-item mr-4 text--nav">
+                  <a class="nav-link nav--text" href="/">Contact</a>
+                </li>
+                <li class="nav-item mr-4 text--nav">
+                  <a class="nav-link nav--text" href="/">Blog</a>
+                </li>
+                <li class="nav-item mr-4 text--nav">
+                  <a class="nav-link nav--text" href="/">Careers</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+
+          <div class="collapse navbar-collapse nav-center">
+            <ul class="navbar-nav custom--nav">
+              <li class="nav-item mr-4 active text--nav">
+                <a class="nav-link nav--text" href="/">Home </a>
+              </li>
+              <li class="nav-item mr-4 text--nav">
+                <a class="nav-link nav--text" href="/">About</a>
+              </li>
+              <li class="nav-item mr-4 text--nav">
+                <a class="nav-link nav--text" href="/">Contact</a>
+              </li>
+              <li class="nav-item mr-4 text--nav">
+                <a class="nav-link nav--text" href="/">Blog</a>
+              </li>
+              <li class="nav-item mr-4 text--nav">
+                <a class="nav-link nav--text" href="/">Careers</a>
+              </li>
+            </ul>
+            <div class="form-inline nav-item custom--side">
+              <a href="#" class="request--button">Request Invite</a>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
     <!-- header end -->
     <!-- main section -->
@@ -84,6 +112,14 @@
             />
           </div>
         </div>
+      </div>
+      <!-- container end -->
+    </div>
+    <!-- main section end -->
+
+    <!-- 2nd content -->
+    <div class="second--content">
+      <div class="container">
         <div class="mid--content">
           <h3 class="content--heading">why choose easybanking?</h3>
           <p class="content--para">
@@ -142,6 +178,13 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <!-- 2nd content end -->
+
+    <!-- article section -->
+    <div class="article--section">
+      <div class="container">
         <div class="end--content">
           <h3 class="content--heading">Latest Article</h3>
           <div class="content--row">
@@ -154,10 +197,12 @@
                 />
               </div>
               <div class="content--des">
-                <span class="art-writer">by claire robinson</span>
+                <span class="art-writer">By Claire Robinson</span>
+                <a href="#" class="a--heading" >
                 <h5 class="mid--head">
                   Recevice Money in any currency with no fees
                 </h5>
+              </a>
                 <p class="mid--para">
                   Lorem ipsum dolor sit amet consectetur, pariatur animi
                   repellendus in vero aliquam numquam quibusdam suscipit! Qui.
@@ -167,16 +212,18 @@
             <div class="end-content--one">
               <div class="end-wrap--img">
                 <img
-                  src="./images/image-currency.jpg"
+                  src="./images/image-restaurant.jpg"
                   class="end-content--img"
                   alt=""
                 />
               </div>
               <div class="content--des">
-                <span class="art-writer">by claire robinson</span>
-                <h5 class="mid--head">
-                  Recevice Money in any currency with no fees
-                </h5>
+                <span class="art-writer">By Wilson Hutton</span>
+                <a href="#" class="a--heading" >
+                  <h5 class="mid--head">
+                   Treat Yourself Without Worrying About Money
+                  </h5>
+                </a>
                 <p class="mid--para">
                   Lorem ipsum dolor sit amet consectetur, pariatur animi
                   repellendus in vero aliquam numquam quibusdam suscipit! Qui.
@@ -186,16 +233,18 @@
             <div class="end-content--one">
               <div class="end-wrap--img">
                 <img
-                  src="./images/image-currency.jpg"
+                  src="./images/image-plane.jpg"
                   class="end-content--img"
                   alt=""
                 />
               </div>
               <div class="content--des">
-                <span class="art-writer">by claire robinson</span>
-                <h5 class="mid--head">
-                  Recevice Money in any currency with no fees
-                </h5>
+                <span class="art-writer">By Wilson Hutton</span>
+                <a href="#" class="a--heading" >
+                  <h5 class="mid--head">
+                    Take your Easybank Card wherever you go
+                  </h5>
+                </a>
                 <p class="mid--para">
                   Lorem ipsum dolor sit amet consectetur, pariatur animi
                   repellendus in vero aliquam numquam quibusdam suscipit! Qui.
@@ -205,16 +254,18 @@
             <div class="end-content--one">
               <div class="end-wrap--img">
                 <img
-                  src="./images/image-currency.jpg"
+                  src="./images/image-confetti.jpg"
                   class="end-content--img"
                   alt=""
                 />
               </div>
               <div class="content--des">
-                <span class="art-writer">by claire robinson</span>
-                <h5 class="mid--head">
-                  Recevice Money in any currency with no fees
-                </h5>
+                <span class="art-writer">By Claire Robinson</span>
+                <a href="#" class="a--heading" >
+                  <h5 class="mid--head">
+                    Our Invite-only Beta accounts are now live
+                  </h5>
+                </a>
                 <p class="mid--para">
                   Lorem ipsum dolor sit amet consectetur, pariatur animi
                   repellendus in vero aliquam numquam quibusdam suscipit! Qui.
@@ -224,10 +275,10 @@
           </div>
         </div>
       </div>
-
-      <!-- container end -->
     </div>
-    <!-- main section end -->
+
+    <!-- article section end -->
+
     <!-- footer -->
     <footer class="main-footer">
       <div class="container">
@@ -292,8 +343,14 @@
     ></script>
 
     <script>
-      $(".toggler-icon-res").click(function () {
-        $(".collapse").collapse("toggle");
+      $("#res--show").click(function () {
+        $(".custom--drop-res").collapse("toggle");
+      });
+
+      $(document).ready(function () {
+        $("#res--show").on("click", function () {
+          $(this).toggleClass("open");
+        });
       });
     </script>
   </body>
