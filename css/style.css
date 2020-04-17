@@ -40,6 +40,7 @@ body {
 .custom--nav {
   width: 100%;
   justify-content: center;
+  padding: 16px 10px;
 }
 
 .custom--side {
@@ -51,7 +52,9 @@ body {
 .request--button {
   font-size: 14px;
   text-align: center;
-  background-color: hsl(192, 70%, 51%);
+  background: #00c9ff96;
+  background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);
+  background: linear-gradient(to right, #92fe9d94, #00c9ffe6);
   color: #fff;
   padding: 14px 40px;
   border-radius: 20px;
@@ -62,7 +65,37 @@ body {
 .request--button:hover {
   text-decoration: none;
   color: #fff;
+  background: #FC5C7D;  
+  background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D); 
+  background: linear-gradient(to right, #6A82FB, #FC5C7D); 
 }
+.nav-text--active:after {
+  content: "";
+  border-bottom: 5px solid #2cbeb8;
+  width: 100%;
+  opacity: 100%;
+  margin: 0px auto;
+  display: table;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+.nav--bottom:after {
+  content: "";
+  border-bottom: 5px solid #2cbeb8;
+  width: 0;
+  opacity: 0;
+  margin: 0px auto;
+  display: table;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+}
+.nav--bottom:hover::after {
+  width: 100%;
+  opacity: 1;
+  transition: width 0.3s;
+}
+
 /* *************************************header end*************************************** */
 
 /*********************************** main content **************************************/
@@ -97,7 +130,7 @@ body {
 }
 
 .right-content--images {
-  background-image: url('./images/image-mockups.png');
+  background-image: url('../images/image-mockups.png');
   background-position: left;
   /* background-repeat: no-repeat; */
   min-height: 750px;
@@ -237,7 +270,9 @@ body {
 .request--button--footer {
   font-size: 14px;
   text-align: center;
-  background-color: hsl(192, 70%, 51%);
+  background: #00c9ff96;
+  background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);
+  background: linear-gradient(to right, #92fe9d94, #00c9ffe6);
   color: #fff;
   padding: 14px 40px;
   border-radius: 20px;
@@ -246,6 +281,10 @@ body {
 .request--button--footer:hover {
   color: #fff;
   text-decoration: none;
+  background: #FC5C7D;  
+background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D); 
+background: linear-gradient(to right, #6A82FB, #FC5C7D); 
+
 }
 .right-content--footer {
   margin-top: 15px;
@@ -358,7 +397,7 @@ body {
     display:block;
   }
 #img--toggle span{
-  background-image: url('./images/icon-hamburger.svg');
+  background-image: url('../images/icon-hamburger.svg');
   display: block;
   width: 60px;
   height: 20px;
@@ -369,7 +408,7 @@ body {
   background-size: contain;
 }
 #res--show.open span:nth-child(1){
-    background-image: url('./images/icon-close.svg');
+    background-image: url('../images/icon-close.svg');
     display: block;
     width: 32px;
     height: 20px;
@@ -380,6 +419,12 @@ body {
     background-size: contain;
 }
 
+.nav-text--active:after {
+  width: 50%;
+}
+.nav--bottom:hover::after {
+  width: 50%;
+}
 }
 
 @media (max-width: 425px) {
